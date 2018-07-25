@@ -50,12 +50,23 @@ def run():
         print("----------------------------------------------------------")
 
             # Get exchange info
-        exchange1 = ccxt.okcoinusd
-        exchange1_info = dir(exchange1)
-        print("Exchange: ", exchange1.id)
-        print("Set Exchange Info (Limits): ", exchange1.rateLimit)
-        #print(exchange1_info)
-        print("Fetch Orders: ", exchange1.fetch_orders())
+        for exch1 in ccxt.exchanges:
+            exch = getattr(ccxt, exch1)
+            print("----------------------------------------------------------")
+            print("Exchange: ", exch.id)
+            print("Set Exchange Info (Limits): ", exch.rateLimit)
+            print("Load Market: ", exch.load_markets)
+            symbols = exch.symbols
+            if symbols is None:
+                print("No Symbols Loaded")
+            else:
+                print("Number of Symbols:", len(symbols))
+                print("Symbols: ")
+                print(exch.id, symbols)
+                currencies = exch.currencies
+                print("Currencies: ", currencies)
+                time.sleep(3)
+            print("\n----------------------------------------------------------\n")
 
             # Place a test order, to place an actual order use the create_order function
 
