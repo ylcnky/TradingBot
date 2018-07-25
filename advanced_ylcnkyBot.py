@@ -30,10 +30,16 @@ Fetch the api keys from BinanceKeys.py file
 #address = client.get_deposit_address(asset='BTC')
 
 def run():
-    # get system status
-    # Create List of Crypto pairs to watch
-    list_of_symbols = ['BTCUSDT', 'ETHUSDT', 'BNBUSDT','BNBBTC', 'ETHBTC', 'LTCBTC']
-    micro_cap_coins = ['ICXBNB', 'BRDBNB', 'NAVBNB', 'RCNBNB']
+        # Initialize function - Set initial conditions for Bot
+        initialize()
+        # Diversify function - Collect all balances across exchange, then diversify them
+        # Active Trader function - Continuous loop of calling trader functions such as Scalping and Artitrage Bot
+def initialize():
+
+        # Get system status
+        # Create List of Crypto pairs to watch
+    all_symbols = []
+    micro_cap_coins = []
     #time_horizon = 'Short
     #Risk = 'High'
     print("\n-------------------------WELCOME-------------------------\n")
@@ -51,7 +57,8 @@ def run():
 
             # Get exchange info
         for exch1 in ccxt.exchanges:
-            exch = getattr(ccxt, exch1)
+            list_of_symbols=[]
+            exch = getattr(ccxt, exch1) ()
             print("----------------------------------------------------------")
             print("Exchange: ", exch.id)
             print("Set Exchange Info (Limits): ", exch.rateLimit)
@@ -61,10 +68,14 @@ def run():
                 print("No Symbols Loaded")
             else:
                 print("Number of Symbols:", len(symbols))
-                print("Symbols: ")
-                print(exch.id, symbols)
+                print("Exchange & Symbols: ")
+                print("-------------------------")
+                for sym in symbols:
+                    list_of_symbols.append(sym) #Create a list of Symbols
+                    all_symbols.append(sym) #Create a list of ALL symbols
+
                 currencies = exch.currencies
-                print("Currencies: ", currencies)
+
                 time.sleep(3)
             print("\n----------------------------------------------------------\n")
 
