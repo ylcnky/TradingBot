@@ -3,13 +3,15 @@ The purpose of the ylcnkyBot Python program is to create an automated TradingBot
 Utilized Python-Binance ( https://github.com/sammchardy/python-binance )
 Advanced-Version capable of all exchanges, all coins (using cctx)
 """
-from binance.client import Client
+#from binance.client import Client
+#from binance.enums import *
+
+import ccxt
 import time
 import matplotlib
 matplotlib.use('TkAgg')
 from matplotlib import cm
 import matplotlib.pyplot as plt
-from binance.enums import *
 import save_historical_data_ylcnky
 from BinanceKeys import BinanceKey1
 
@@ -31,7 +33,7 @@ def run():
     micro_cap_coins = ['ICXBNB', 'BRDBNB', 'NAVBNB', 'RCNBNB']
     #time_horizon = 'Short
     #Risk = 'High'
-    print("\n\n---------------------------------------------------------\n\n")
+    print("\n---------------------------------------------------------\n")
     print("Hello and Welcome to cyptocurency trader bot created by ylcnky ")
     time.sleep(5)
     try:
@@ -66,8 +68,8 @@ def run():
         print("\n \n \nATTENTION: NON-VALID CONNECTION WITH BINANCE \n \n \n")
 
     # Get Info about Coins in Watch List
-    coinprices(list_of_symbols)
-    cointickers(list_of_symbols)
+    coin_prices(list_of_symbols)
+    coin_tickers(list_of_symbols)
     # for symbol in list_of_symbols:
     #    market_depth(symbol)
     # for coin in micro_cap_coins:

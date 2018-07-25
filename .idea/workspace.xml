@@ -3,7 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="c50a44f5-9217-4387-a259-7ec3a4140574" name="Default" comment="README init">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/save_historical_data_ylcnky.py" afterPath="$PROJECT_DIR$/save_historical_data_ylcnky.py" />
+      <change beforePath="$PROJECT_DIR$/Binance_BRDBNB_8 hours ago UTC-now UTC.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Binance_BTCUSDT_1 hours ago UTC-now UTC.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Binance_BTCUSDT_12 months ago UTC-now UTC.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Binance_ETHBTC_6 months ago UTC-now UTC.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Binance_ETHUSDT_8 hours ago UTC-now UTC.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Binance_ICXBNB_1 month ago UTC-now UTC.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Binance_ICXBNB_24 hours ago UTC-now UTC.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Binance_ICXBNB_8 hours ago UTC-now UTC.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/ylcnkyBot.py" afterPath="$PROJECT_DIR$/ylcnkyBot.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,33 +37,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ylcnkyBot.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ylcnkyBot.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ylcnkyBot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="265" column="0" lean-forward="true" selection-start-line="265" selection-start-column="0" selection-end-line="265" selection-end-column="0" />
+            <state relative-caret-position="300">
+              <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
               <folding>
-                <element signature="e#239#272#0" expanded="true" />
+                <element signature="e#304#315#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BinanceKeys.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BinanceKeys.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="57" lean-forward="false" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="save_historical_data_ylcnky.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="save_historical_data_ylcnky.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/save_historical_data_ylcnky.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="236" column="33" lean-forward="false" selection-start-line="236" selection-start-column="33" selection-end-line="236" selection-end-column="33" />
+            <state relative-caret-position="3675">
+              <caret line="245" column="0" lean-forward="false" selection-start-line="245" selection-start-column="0" selection-end-line="245" selection-end-column="0" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -86,15 +84,15 @@
       <list>
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/BinanceKeys.py" />
-        <option value="$PROJECT_DIR$/ylcnkyBot.py" />
         <option value="$PROJECT_DIR$/save_historical_data_ylcnky.py" />
+        <option value="$PROJECT_DIR$/ylcnkyBot.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="589" />
+    <option name="x" value="305" />
     <option name="y" value="23" />
-    <option name="width" value="816" />
+    <option name="width" value="1100" />
     <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -160,10 +158,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="589" y="23" width="816" height="877" extended-state="0" />
+    <frame x="305" y="23" width="1100" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15974844" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.117701575" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -241,24 +239,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BinanceKeys.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="57" lean-forward="false" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ylcnkyBot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="265" column="0" lean-forward="true" selection-start-line="265" selection-start-column="0" selection-end-line="265" selection-end-column="0" />
-          <folding>
-            <element signature="e#239#272#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Binance_BTCUSDT_1 hours ago UTC-now UTC.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="499">
@@ -275,12 +255,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/BinanceKeys.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="57" lean-forward="false" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/save_historical_data_ylcnky.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="236" column="33" lean-forward="false" selection-start-line="236" selection-start-column="33" selection-end-line="236" selection-end-column="33" />
+        <state relative-caret-position="3675">
+          <caret line="245" column="0" lean-forward="false" selection-start-line="245" selection-start-column="0" selection-end-line="245" selection-end-column="0" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Binance_BRDBNB_1 month ago UTC-now UTC.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Binance_ETHUSDT_8 hours ago UTC-now UTC.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ylcnkyBot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+          <folding>
+            <element signature="e#304#315#0" expanded="true" />
           </folding>
         </state>
       </provider>
