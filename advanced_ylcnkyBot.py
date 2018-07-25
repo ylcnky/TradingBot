@@ -15,7 +15,7 @@ Advanced-Version capable of all exchanges, all coins (using cctx)
 
 import ccxt
 import time
-from Keys import Key1
+#from Keys import Key1
 
 """
 Fetch the api keys from BinanceKeys.py file
@@ -38,8 +38,14 @@ def run():
     print("\n---------------------------------------------------------\n")
     print("Hello and Welcome to advanced ylcnky-cyptocurency trader bot created ")
     print("For questions and comments, please contact mehmet@ylcnky.com")
+
     time.sleep(5)
     try:
+        # Get Status of Exchange & Account
+        print("\nExchange Status: \n \n ")
+        print(ccxt.exchanges)
+
+
         # Example visualizations of coins
         """
         save_historical_data_ylcnky.save_historic_klines_csv('BTCUSDT', "1 hours ago UTC", "now UTC", Client.KLINE_INTERVAL_1MINUTE)
@@ -56,20 +62,16 @@ def run():
         """
     except():
         pass
-    # Get Status of Exchange & Account
-    try:
-        status = client.get_system_status()
-        print("\nExchange Status: ", status)
+
+        #print("\nExchange Status: ", status)
 
         # Account Withdrawal History Info
-        withdraws = client.get_withdraw_history()
-        print("\nClient Withdraw History: ", withdraws)
+        #withdraws = client.get_withdraw_history()
+        #print("\nClient Withdraw History: ", withdraws)
 
         # Get exchange info
-        info = client.get_exchange_info()
-        print("\nExchange Info (Limits): ", info)
-    except:
-        print("\n \n \nATTENTION: NON-VALID CONNECTION WITH BINANCE \n \n \n")
+        #info = client.get_exchange_info()
+        #print("\nExchange Info (Limits): ", info)
 
     # Get Info about Coins in Watch List
     coin_prices(list_of_symbols)
