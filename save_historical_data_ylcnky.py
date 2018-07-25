@@ -230,7 +230,7 @@ def save_historic_klines_csv(symbol, start, end, interval):
     ten_period_moving_ave = []
     time10=[]
 
-    with open('Binance_{}_{}-{}.txt'.format(symbol, start, end), w) as f:
+    with open('Binance_{}_{}-{}.txt'.format(symbol, start, end), 'w') as f:
         f.write('Time, Open, High, Low, Close, Volume\n')
         for kline in klines:
             # print(kline)
@@ -245,7 +245,7 @@ def save_historic_klines_csv(symbol, start, end, interval):
             f.write(format_kline)
 
             # track opening prices, use for calculating moving averages
-            list_of_open(open1)
+            list_of_open.append(open1)
             # Calculate three 'period' moving average - Based on Candlestick duration
             if len(list_of_open)>2:
                 price3 = 0
