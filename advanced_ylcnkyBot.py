@@ -15,6 +15,7 @@ Advanced-Version capable of all exchanges, all coins (using cctx)
 
 import ccxt
 import time
+import pprint
 #from Keys import Key1
 
 """
@@ -35,18 +36,26 @@ def run():
     micro_cap_coins = ['ICXBNB', 'BRDBNB', 'NAVBNB', 'RCNBNB']
     #time_horizon = 'Short
     #Risk = 'High'
-    print("\n---------------------------------------------------------\n")
-    print("Hello and Welcome to advanced ylcnky-cyptocurency trader bot created ")
+    print("\n-------------------------WELCOME-------------------------\n")
+    print("Hello and Welcome to advanced |ylcnky-cyptocurency| trader bot ")
     print("For questions and comments, please contact mehmet@ylcnky.com")
+    print("----------------------------------------------------------")
 
     time.sleep(5)
     try:
             # Get Status of Exchange & Account
-        print("\nExchange Status: \n \n ")
+        print("\n-------------------Exchange Status----------------------\n")
+        print('Number of Exchanges: ', len(ccxt.exchanges))
         print(ccxt.exchanges)
+        print("----------------------------------------------------------")
 
             # Get exchange info
-        #print("\nExchange Info (Limits): ", info)
+        exchange1 = ccxt.okcoinusd
+        exchange1_info = dir(exchange1)
+        print("Exchange: ", exchange1.id)
+        print("Set Exchange Info (Limits): ", exchange1.rateLimit)
+        #print(exchange1_info)
+        print("Fetch Orders: ", exchange1.fetch_orders())
 
             # Place a test order, to place an actual order use the create_order function
 
@@ -58,6 +67,23 @@ def run():
 
         # for coin in micro_cap_coins:
         #    visualize_market_depth(1, 1, coin)
+
+        # for coin in micro_cap_coins:
+        #    scalping_orders(coin, 1, 1)
+
+            # Get recent trades
+        # trades = client.get_recent_trades(symbol="BNBBTC")
+        # print("\nRecent Trades: ", trades)
+        # print("Local Time: ", time.localtime())
+        # print("Recent Trades Time: ", convert_time_binance(trades[0]['time']))
+
+            # Get Historical Trades
+        # hist_trades = client.get_historical_trades(symbol="BNBBTC")
+        # print("\nHistorical Trades: ", hist_trades)
+
+            # Get Aggregate Trades
+        # agg_trades = client.get_aggregate_trades(symbol="BNBBTC")
+        # print("\nAggregate Trades: ", agg_trades)
 
 
         # Example visualizations of coins
@@ -86,25 +112,7 @@ def run():
 
 
 
-    #for coin in micro_cap_coins:
-    #    scalping_orders(coin, 1, 1)
 
-    # get recent trades
-    trades = client.get_recent_trades(symbol="BNBBTC")
-    print("\nRecent Trades: ", trades)
-    print("Local Time: ", time.localtime())
-    print("Recent Trades Time: ", convert_time_binance(trades[0]['time']))
-
-    # Get Historical Trades
-    try:
-        hist_trades = client.get_historical_trades(symbol="BNBBTC")
-        print("\nHistorical Trades: ", hist_trades)
-    except:
-
-
-    # Get Aggregate Trades
-    agg_trades = client.get_aggregate_trades(symbol="BNBBTC")
-    print("\nAggregate Trades: ", agg_trades)
 
 def convert_time_binance(gt):
     #Converts from Binance Time Format (milliseconds) to time-struct
