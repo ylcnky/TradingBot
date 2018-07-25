@@ -33,7 +33,23 @@ def run():
         # Initialize function - Set initial conditions for Bot
         initialize()
         # Diversify function - Collect all balances across exchange, then diversify them
-        # Active Trader function - Continuous loop of calling trader functions such as Scalping and Artitrage Bot
+        diversify()
+        # Active Trader: Scalping, SwingTrading, Arbitrage
+        while 1:
+            ActiveTrader()
+
+def diversify():
+
+            # Diversity TODO:
+                # Collect amounts in wallets (available for trading)
+                # Diversify into pre-described amounts
+                    # 50% BTC, 5% each of 8 next top coins, 10x 1% micro-caps
+        pass
+
+def ActiveTrader():
+    # Active Trader function - Continuous loop of calling trader functions such as Scalping and Artitrage Bot
+    pass
+
 def initialize():
 
         # Get system status
