@@ -3,15 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c50a44f5-9217-4387-a259-7ec3a4140574" name="Default" comment="README init">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Binance_BRDBNB_8 hours ago UTC-now UTC.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Binance_BTCUSDT_1 hours ago UTC-now UTC.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Binance_BTCUSDT_12 months ago UTC-now UTC.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Binance_ETHBTC_6 months ago UTC-now UTC.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Binance_ETHUSDT_8 hours ago UTC-now UTC.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Binance_ICXBNB_1 month ago UTC-now UTC.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Binance_ICXBNB_24 hours ago UTC-now UTC.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Binance_ICXBNB_8 hours ago UTC-now UTC.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ylcnkyBot.py" afterPath="$PROJECT_DIR$/ylcnkyBot.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,13 +28,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ylcnkyBot.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ylcnkyBot.py">
+      <file leaf-file-name="advanced_ylcnkyBot.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/advanced_ylcnkyBot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+            <state relative-caret-position="219">
+              <caret line="39" column="71" lean-forward="false" selection-start-line="39" selection-start-column="71" selection-end-line="39" selection-end-column="71" />
               <folding>
-                <element signature="e#304#315#0" expanded="true" />
+                <element signature="e#482#493#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -86,6 +77,8 @@
         <option value="$PROJECT_DIR$/BinanceKeys.py" />
         <option value="$PROJECT_DIR$/save_historical_data_ylcnky.py" />
         <option value="$PROJECT_DIR$/ylcnkyBot.py" />
+        <option value="$PROJECT_DIR$/Keys.py" />
+        <option value="$PROJECT_DIR$/advanced_ylcnkyBot.py" />
       </list>
     </option>
   </component>
@@ -129,6 +122,11 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -155,17 +153,31 @@
       <option name="presentableId" value="Default" />
       <updated>1532526519177</updated>
     </task>
+    <task id="LOCAL-00001" summary="cleanup imports, comment out redundant sections">
+      <created>1532550933938</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1532550933938</updated>
+    </task>
+    <task id="LOCAL-00002" summary="make keys.py file for other exchange platform">
+      <created>1532550964131</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1532550964131</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="305" y="23" width="1100" height="877" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.117701575" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24905661" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -201,6 +213,11 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="cleanup imports, comment out redundant sections" />
+    <MESSAGE value="make keys.py file for other exchange platform" />
+    <option name="LAST_COMMIT_MESSAGE" value="make keys.py file for other exchange platform" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -295,6 +312,24 @@
           <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
           <folding>
             <element signature="e#304#315#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Keys.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/advanced_ylcnkyBot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="39" column="71" lean-forward="false" selection-start-line="39" selection-start-column="71" selection-end-line="39" selection-end-column="71" />
+          <folding>
+            <element signature="e#482#493#0" expanded="true" />
           </folding>
         </state>
       </provider>
