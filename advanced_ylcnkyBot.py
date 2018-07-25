@@ -41,9 +41,23 @@ def run():
 
     time.sleep(5)
     try:
-        # Get Status of Exchange & Account
+            # Get Status of Exchange & Account
         print("\nExchange Status: \n \n ")
         print(ccxt.exchanges)
+
+            # Get exchange info
+        #print("\nExchange Info (Limits): ", info)
+
+            # Place a test order, to place an actual order use the create_order function
+
+            # Get Info about Coins in Watch List
+        # coin_prices(list_of_symbols)
+        # coin_tickers(list_of_symbols)
+        # for symbol in list_of_symbols:
+            # market_depth(symbol)
+
+        # for coin in micro_cap_coins:
+        #    visualize_market_depth(1, 1, coin)
 
 
         # Example visualizations of coins
@@ -61,28 +75,19 @@ def run():
             save_historical_data_ylcnky.save_historic_klines_csv(coin, "1 month ago UTC", "now UTC", Client.KLINE_INTERVAL_1DAY)
         """
     except():
-        pass
-
-        #print("\nExchange Status: ", status)
+        print('\n \n \nATTENTION: NON VALID CONNECTION WITH CRYPTOCURRENCY BOT \n \n \n')
 
         # Account Withdrawal History Info
         #withdraws = client.get_withdraw_history()
         #print("\nClient Withdraw History: ", withdraws)
 
-        # Get exchange info
-        #info = client.get_exchange_info()
-        #print("\nExchange Info (Limits): ", info)
 
-    # Get Info about Coins in Watch List
-    coin_prices(list_of_symbols)
-    coin_tickers(list_of_symbols)
-    # for symbol in list_of_symbols:
-    #    market_depth(symbol)
-    # for coin in micro_cap_coins:
-    #    visualize_market_depth(1, 1, coin)
 
-    for coin in micro_cap_coins:
-        scalping_orders(coin, 1, 1)
+
+
+
+    #for coin in micro_cap_coins:
+    #    scalping_orders(coin, 1, 1)
 
     # get recent trades
     trades = client.get_recent_trades(symbol="BNBBTC")
@@ -95,7 +100,7 @@ def run():
         hist_trades = client.get_historical_trades(symbol="BNBBTC")
         print("\nHistorical Trades: ", hist_trades)
     except:
-        print('\n \n \nATTENTION: NON VALID CONNECTION WITH BINANCE \n \n \n')
+
 
     # Get Aggregate Trades
     agg_trades = client.get_aggregate_trades(symbol="BNBBTC")
